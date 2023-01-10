@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular&display=swap);
+@import "_nullstyle";
+
+:root {
+   --index: calc(1vw + 1vh);
+   --side-small: 26;
+   --side-big: 36;
+   --transition: 0.75s cubic-bezier(0.075, 0.5, 0, 1);
+   // Задаем глубину body с запасом
+   // --depth: 4130px;
+   --depth: 6130px;
+}
+
+body {
+   font-family: "Roboto";
+   // background-color: rgb(11, 11, 11);
+   color: #fff;
+   font-size: calc(var(--index) * 1);
+   line-height: 1.7;
+   height: var(--depth);
+   &::-webkit-scrollbar {
+      width: 0;
+   }
+}
+
+.wrapper {
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   perspective: 1500px;
+   background: url('../img/bg/01.jpg') 0 0 / cover no-repeat;
+}
+.main {
+   transform-style: preserve-3d;
+   height: 100%;
+
+   &__frame {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: var(--transition), opacity 0.75s;
+      will-change: transform;
+      transform-style: preserve-3d;
+   }
+}
+
+
+
+.frame-1 {
+
+   &__content {
+      background-color: #E7F066;
+      // filter: blur(50px);
+      // box-shadow: 0 0 500px #E7F066;
+      position: relative;
+      width: 100%;
+      height: 100%;
+   }
+
+   &__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 75vw; /* 1080/1440 */
+      height: 83.5vh; /* 668/800 */
+
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
+.frame-2 {
+
+   &__content {
+      background-color: #9C8554;
+      // box-shadow: 0 0 500px #9C8554;
+      position: relative;
+      width: 100%;
+      height: 100%;
+   }
+
+   &__image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 74vw; /* 1065/1440 */
+      height: 83.5vh; /* 668/800 */
+
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
+.frame-3 {
+
+   &__content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+   }
+
+   &__image-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50vw;
+      height: 100vh;
+
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+   &__image-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50vw;
+      height: 100vh;
+
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
+.frame-4 {
+
+   &__content {
+      background-color: #EBEBEB;
+      // box-shadow: 0 0 500px #9C8554;
+      position: relative;
+      width: 100%;
+      height: 100%;
+   }
+
+   &__image {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 1.73vw; /* 25/1440 */
+      width: 55.2vw; /* 796/1440 */
+      height: 71vh; /* 568/800 */
+
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
+.frame-5 {
+
+   &__content {
+      background-color: #A26779;
+      // box-shadow: 0 0 500px #9C8554;
+      position: relative;
+      width: 100%;
+      height: 100%;
+   }
+
+   &__image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 74vw; /* 1065/1440 */
+      height: 86vh; /* 688/800 */
+
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
+.frame-6 {
+
+   &__content {
+      // background-color: #A26779;
+      // box-shadow: 0 0 500px #9C8554;
+      position: relative;
+      width: 100%;
+      height: 100%;
+   }
+
+   &__image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100vw; /* 1065/1440 */
+      height: 100vh; /* 688/800 */
+
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
+.frame-7 {
+
+   &__content {
+      background-color: #504B4D;
+      // box-shadow: 0 0 500px #9C8554;
+      position: relative;
+      width: 100%;
+      height: 100%;
+   }
+
+   &__image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 74vw; /* 1065/1440 */
+      height: 86vh; /* 688/800 */
+
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
+.frame-8 {
+
+   &__content {
+      background-color: #B04836;
+      // box-shadow: 0 0 500px #9C8554;
+      position: relative;
+      width: 100%;
+      height: 100%;
+   }
+
+   &__image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 74vw; /* 1065/1440 */
+      height: 86vh; /* 688/800 */
+
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
