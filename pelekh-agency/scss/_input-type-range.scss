@@ -1,0 +1,72 @@
+// Обращаемся к input и обнуляем его общие стили для Chrome, Opera, Yandex и MozilaFireFox
+// Потом пишем свои стили
+.input {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   width: 100%;
+   height: 6px;
+   border-radius: 10px;
+//С помощью linear-gradient и JS стилизируем шкалу прогресса input 
+   background: linear-gradient(to right, #67B0E3 0%, #67B0E3 0%, #E8E8E8 0%, #E8E8E8 100%);
+
+// Обращаемся к ползунку input и обнуляем стили для Chrome, Opera, Yandex 
+// Потом пишем свои стили
+   &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: 2px solid #67B0E3;     
+   }
+// Обращаемся к ползунку input и обнуляем стили для MozilaFireFox
+// Потом пишем свои стили
+   &::-moz-range-thumb {
+      -moz-appearance: none;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: 2px solid #67B0E3;
+   }
+}
+
+// ==================================================================================================================
+// HTML
+// <input class="input" type="range" value="0" min="0" max="100" oninput="showProgress()">
+// value="0"  Значение по умолчанию, можно задать любое числовое значение
+// min="0" max="100"   Мbнимальное и максимальное значение value можно, задать любое числовое значение
+//oninput="showProgress()"   При активации input включаем заданную функцию в JS
+// ==================================================================================================================
+
+// ==================================================================================================================
+// JS
+// Стилизация шкалы прогресса
+/*
+const rangePrice = document.querySelector('.input');
+const inputTitle = document.querySelector('.input__title');
+const rangeValue = rangePrice.value;
+
+if (rangeValue > 0) {
+   showProgress();
+}
+
+function showProgress() {
+   // Переводим заданые пользователем значения value в проценты
+   let min = +inputPrice.min,
+      max = +inputPrice.max - min,
+      value = +inputPrice.value - min,
+      c = 0;
+   const result = (value / max * 100);
+   if (result < 0) {
+      c = 0;
+   } else {
+      c = `${result}`;
+   }
+   // Стилизируем шкалу с заголовком который бегает за ползунком
+   // подставляя переведенное значение value на проценты от 0 до 100%
+   const styleTransform = -40 - (c * 0.2);
+   inputTitle.style.transform = `translateX(${styleTransform}%)`;
+   inputTitle.style.left = `${c}%`;
+   inputPrice.style.background = `linear-gradient(to right, #67B0E3 0%, #67B0E3 ${c}%, ${c}%, #E8E8E8 100%)`;
+}
+*/
+// ==================================================================================================================

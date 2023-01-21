@@ -1,0 +1,89 @@
+// @font-face {
+//   font-family: 'icons';
+//   font-display: swap;
+//   src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+@font-face {
+  font-family: 'icons';
+  font-display: swap;
+  src: url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// @font-face {
+//   font-family: 'icons';
+//   font-display: swap;
+//   src: url("../fonts/icons-form.woff2") format("woff2"), url("../fonts/icons-form.woff") format("woff");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+@font-face {
+  font-family: 'icons';
+  font-display: swap;
+  src: url("../fonts/icons-form.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+ 
+ [class^="icon-"], [class*=" icon-"] {
+  &::before {
+    font-family: 'icons';
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+ }
+ 
+ .icon-arrow:before {
+   content: "\e900";
+ }
+ .icon-arrow-link:before {
+   content: "\e901";
+ }
+ .icon-bathrooms:before {
+   content: "\e902";
+ }
+ .icon-beds:before {
+   content: "\e903";
+ }
+ .icon-builds:before {
+   content: "\e904";
+ }
+ .icon-design:before {
+   content: "\e905";
+ }
+ .icon-locations:before {
+   content: "\e906";
+ }
+ .icon-rooms:before {
+   content: "\e907";
+ }
+ .icon-s-facebook:before {
+   content: "\e908";
+ }
+ .icon-s-in:before {
+   content: "\e909";
+ }
+ .icon-s-instagram:before {
+   content: "\e90a";
+ }
+ .icon-star:before {
+   content: "\e90b";
+ }
+ .icon-s-twitter:before {
+   content: "\e90c";
+ }
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-email:before {
+  content: "\e945";
+}
+.icon-user:before {
+  content: "\e976";
+}
