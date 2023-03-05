@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="dist/img/icon.ico">
+   <link rel="stylesheet" href="./dist/css/styles.css">
+
+   <script defer src="dist/js/swiper-min.js"></script>
+   <script defer src="dist/js/sliders.js"></script>
+   <script defer src="dist/js/spoilers.min.js"></script>
+   <script defer src="dist/js/popup.min.js"></script>
+   <script defer src="dist/js/script.js"></script>
+
+   <title>AMS Pilot</title>
+</head>
+
+
+<body>
+
+   <div class="overflow-x-hidden w-full h-full wrapper">
+      <header class="bg-decor-header relative overflow-visible">
+         <!-- NAVIGATION -->
+         <div class="hidden xl:block absolute w-[474px] h-[560px] right-0 bottom-0 z-10"><img class="w-full h-full" src="dist/img/main-block/slider/shadow-slider.png" alt="shadow-slider"></div>
+   
+         <div class="w-screen h-20 sm:h-28 z-50 flex justify-center fixed bg-white">
+            <nav class="max-w-[1580px] h-20 px-8 flex items-center fixed w-screen sm:h-28">
+   
+               <!-- NAVIGATION PC -->
+                  <a class="mr-3 xl:mr-16 text-2xl sm:text-3xl text-blueColor font-bold inline-block fixClickBg" href="#">AMS <span
+                     class="text-black font-normal">Pilot</span>.</a>
+         
+                  <ul class="hidden lg:flex gap-4 xl:gap-12 px-4 items-center mr-auto text-xl text-linkColor">
+                     <li class="hover:text-hoverLinkColor duration-50"><a href="#">Home</a></li>
+                     <li class="hover:text-hoverLinkColor duration-50 hover-popup relative flex items-center gap-1"><a href="#">Tools</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-[#ffd814]">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                        </svg>
+                        <div class="popup-list">
+                           <ul class="bg-slate-200 flex flex-col items-center gap-1 w-full h-full rounded-3xl p-3">
+                           <li class="text-center"><a href="#" class="hover:text-hoverLinkColor duration-50">Menu item</a></li>
+                           <li class="text-center"><a href="#" class="hover:text-hoverLinkColor duration-50">Menu item</a></li>
+                           <li class="text-center"><a href="#" class="hover:text-hoverLinkColor duration-50">Menu item</a></li>
+                           <li class="text-center"><a href="#" class="hover:text-hoverLinkColor duration-50">Menu item</a></li>
+                           <li class="text-center"><a href="#" class="hover:text-hoverLinkColor duration-50">Menu item</a></li>
+                           <li class="text-center"><a href="#" class="hover:text-hoverLinkColor duration-50">Menu item</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="hover:text-hoverLinkColor duration-50"><a href="#">Contact Us</a></li>
+                  </ul>
+         
+                  <ul class="hidden lg:flex gap-4 xl:gap-8 px-4 items-center text-xl text-linkColor">
+                     <li class="hover:text-hoverLinkColor duration-50 hover-popup relative flex items-center gap-1"><a href="#">English</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                        </svg>
+                           <div class="popup-list">
+                              <ul class="bg-slate-200 flex flex-col items-center gap-1 w-full h-full rounded-3xl p-3">
+                                 <li class="text-center"><a href="#" class="hover:text-hoverLinkColor duration-50">German</a></li>
+                                 <li class="text-center"><a href="#" class="hover:text-hoverLinkColor duration-50">French</a></li>
+                                 <li class="text-center"><a href="#" class="hover:text-hoverLinkColor duration-50">Italian</a></li>
+                              </ul>
+                           </div>
+                     </li>
+                     <li class="hover:text-hoverLinkColor duration-50"><a href="#">Log In</a></li>
+                     <li class="hover:text-hoverLinkColor duration-50"><a href="#">Sign Up</a></li>
+                  </ul>
+         
+                  <button class="header-btn hidden px-9 py-2 ml-auto lg:ml-2 text-base sm:text-xl font-normal text-mainColor bg-[#ffd814] fixClickBg border rounded-3xl hover:border-gray-600 hover:bg-yellow-200 duration-50" type="button">Get Started</button>
+   
+               <!-- NAVIGATION MOBILE-BURGER -->
+               <nav class="block lg:hidden absolute top-20 sm:top-28 w-80 right-0 pt-10 bg-slate-50 burger-munu shadow-spoilerShadow rounded-bl-lg">             
+                  <ul class="mb-5 px-4 flex flex-col gap-6 pb-10 items-center text-xl text-[#525252]">
+                     <li class="hover:text-hoverLinkColor duration-50 fixClickBg"><a href="#">Log In</a></li>
+                     <li class="hover:text-hoverLinkColor duration-50 fixClickBg"><a href="#">Sign Up</a></li>
+                     <li class="hover:text-hoverLinkColor duration-50 fixClickBg"><a href="#">Home</a></li>
+                     <li class="hover:text-hoverLinkColor duration-50 hover-popup relative flex items-center gap-1"><a href="#">Tools</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-[#ffd814]">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                        </svg>
+                        <div class="popup-list z-10">
+                           <ul class="bg-slate-200 flex flex-col items-center gap-1 w-full h-full rounded-3xl p-3">
+                           <li class="text-center"><a href="#" class="hover:text-hoverLinkColor duration-50 fixClickBg">Menu item</a></li>
+                           <li class="text-center"><a href="#" class="hover:text-hoverLinkColor duration-50 fixClickBg">Menu item</a></li>
+                           <li class="text-center"><a href="#" class="hover:text-hoverLinkColor duration-50 fixClickBg">Menu item</a></li>
+                           <li class="text-center"><a href="#" class="hover:text-hoverLinkColor duration-50 fixClickBg">Menu item</a></li>
+                           <li class="text-center"><a href="#" class="hover:text-hoverLinkColor duration-50 fixClickBg">Menu item</a></li>
+                           <li class="text-center"><a href="#" class="hover:text-hoverLinkColor duration-50 fixClickBg">Menu item</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="hover:text-hoverLinkColor duration-50 fixClickBg"><a href="#">Contact Us</a></li>
+   
+                     <li class="hover-link hover-popup relative flex items-center gap-1 hover:text-hoverLinkColor duration-50"><a href="#">English</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                        </svg>
+                           <div class="popup-list">
+                              <ul class="bg-slate-200 flex flex-col items-center gap-1 w-full h-full rounded-3xl p-3">
+                                 <li class="text-center"><a href="#" class="hover:text-hoverLinkColor duration-50 fixClickBg">German</a></li>
+                                 <li class="text-center"><a href="#" class="hover:text-hoverLinkColor duration-50 fixClickBg">French</a></li>
+                                 <li class="text-center"><a href="#" class="hover:text-hoverLinkColor duration-50 fixClickBg">Italian</a></li>
+                              </ul>
+                           </div>
+                     </li>
+                     
+                  </ul>
+               </nav>
+   
+               <!-- BURGER-BUTTON -->
+               <button type="button" class="block ml-6 lg:hidden burger-btn fixClickBg"><span></span></button>
+            </nav>
+         </div>
+   
+         <!-- MAIN-BLOCK -->
+         <section class="max-w-[1580px] w-full pt-20 sm:pt-28 px-4 mx-auto relative">   
+            <div class="flex flex-col items-center pt-12 xl:flex-row xl:items-start mx-auto xl:pt-20 min-h-[650px]">
+   
+               <!-- TEXT CONTENT -->
+               <div class="flex flex-col items-center max-w-[477px] xl:items-start xl:max-w-[400px] 2xl:max-w-[520px] xl:px-4">
+                  <p class="text-blueColor text-base font-normal mb-9 sm:mb-14">Get your <a href="#" class="border-b border-transparent hover:border-blueColor duration-50"> Search Term Analyzer</a> for Free Forever!</p>
+                  <h1 class="text-mainColor text-4xl sm:text-5xl xl:text-4xl 2xl:text-5xl font-light mb-4">PPC Manual Optimizer</h1>
+                  <p class="text-mainColor text-lg sm:text-xl 2xl:text-2xl font-medium mb-10">Simple  -  Profitable  -  From Sellers to Sellers</p>
+                  <p class="text-lightMainColor text-base font-light mb-14 text-center xl:text-left">Tool that boosts your profit up to +30% and more. Full control over the process, predictable results and elimination of human factor. No credit card needed, no hidden conditions. 
+                     <br><span class="font-medium">It’s free forever! Try it today!</span>
+                  </p>
+                  <button class="text-white text-lg sm:text-2xl font-light mb-4 bg-[#0075cf] fixClickBg px-10 py-2 rounded-3xl border hover:border hover:bg-white hover:text-black duration-50">Use Forever for Free</button>
+                  <p class="text-mainColor text-sm font-normal mb-5">No Credit Card. No hidden conditions. Simple use it.</p>
+               </div>
+   
+               <!-- SLIDER-THUMBS MAIN-BLOCK -->
+               <div class="w-full max-w-[610px] px-6 sm:px-0 h-14 bg-white rounded-md shadow-mainShadow absolute xl:left-4 -bottom-6 sm:-bottom-0 z-10 fixClickBg">
+                  <div class="swiper-container slider-main-block slider-main-thumbs h-full w-full">
+                     <div class="swiper-wrapper flex justify-center h-14">
+                        <div class="swiper-slide slide-thumb max-w-[94px] flex justify-center items-center relative icon-grip-vertical-solid">                  
+                           <span class="absolute w-[1px] h-8 bg-[#e2e2e2] right-0 top-3"></span>
+                           <div class="thumb-prompt absolute w-28 py-2 px-4 bg-[#131313] text-white text-center text-sm">Search Term Analyzer</div>                           
+                        </div>
+                        <div class="swiper-slide slide-thumb max-w-[94px] flex justify-center items-center relative icon-chart-pie-solid">
+                           <span class="absolute w-[1px] h-8 bg-[#e2e2e2] right-0 top-3"></span>
+                           <div class="thumb-prompt absolute w-28 py-2 px-4 bg-[#131313] text-white text-center text-sm">Search Term Analyzer</div> 
+                        </div>
+                        <div class="swiper-slide slide-thumb max-w-[94px] flex justify-center items-center relative icon-chart-line-solid">
+                           <span class="absolute w-[1px] h-8 bg-[#e2e2e2] right-0 top-3"></span>
+                           <div class="thumb-prompt absolute w-28 py-2 px-4 bg-[#131313] text-white text-center text-sm">Search Term Analyzer</div> 
+                        </div>
+                        <div class="swiper-slide slide-thumb max-w-[94px] flex justify-center items-center relative icon-chart-bar-solid">
+                           <span class="absolute w-[1px] h-8 bg-[#e2e2e2] right-0 top-3"></span>
+                           <div class="thumb-prompt absolute w-28 py-2 px-4 bg-[#131313] text-white text-center text-sm">Search Term Analyzer</div> 
+                        </div>
+                        <div class="swiper-slide slide-thumb max-w-[94px] flex justify-center items-center relative icon-arrow-up-1-9-solid">
+                           <span class="absolute w-[1px] h-8 bg-[#e2e2e2] right-0 top-3"></span>
+                           <div class="thumb-prompt absolute w-28 py-2 px-4 bg-[#131313] text-white text-center text-sm">Search Term Analyzer</div> 
+                        </div>
+                        <div class="swiper-slide slide-thumb max-w-[94px] flex justify-center items-center icon-ban-solid">
+                           <div class="thumb-prompt absolute w-28 py-2 px-4 bg-[#131313] text-white text-center text-sm">Search Term Analyzer</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+   
+               <!-- SLIDER MAIN-BLOCK -->
+               <div class="w-full xl:w-[1160px] xl:h-[555px] slider-block relative bottom-0 xl:absolute">
+   
+                  <div class="hidden xl:block absolute top-44 -left-16 w-44 h-24"><img class="w-full h-full" src="dist/img/main-block/decor/02.png" alt="decor-slider"></div>
+                  <div class="hidden xl:block absolute w-[453] h-52 -bottom-12 -left-24"><img class="w-full h-full" src="dist/img/main-block/decor/03.png" alt="decor-slider"></div>
+                  <div class="absolute w-24 h-40 left-[585px] -top-20 hidden xl:block"><img class="w-full h-full" src="dist/img/main-block/decor/04.png" alt="decor-slider"></div>
+                  <div class="absolute w-full h-full">             
+                     <div class="w-full h-full absolute pb-[48%] xl:pb-0 xl:relative">
+                        <div class="swiper-container slider-main-block slider-main-presentation w-full min-h-full">
+                           <div class="swiper-wrapper flex min-h-full">
+                              <div class="swiper-slide min-w-full h-full relative">
+                                 <img class="w-full h-full" src="dist/img/main-block/slider/01.png" alt="slider-img">
+                                 <div class="hidden xl:block absolute w-60 h-48 left-52 -top-24 rounded-lg overflow-hidden"><img class="w-full h-full" src="dist/img/main-block/slider/02.png" alt="slide-decor"></div>
+                                 <div class="hidden xl:block absolute w-72 h-[340px] left-96 -bottom-32"><img class="w-full h-full" src="dist/img/main-block/slider/03.png" alt="slide-decor"></div>
+                              </div>
+                              <div class="swiper-slide min-w-full h-full relative">
+                                 <img class="w-full h-full" src="dist/img/main-block/slider/01.png" alt="slider-img">
+                                 <div class="hidden xl:block absolute w-60 h-48 left-52 -top-24 rounded-lg overflow-hidden"><img class="w-full h-full" src="dist/img/main-block/slider/02.png" alt="slide-decor"></div>
+                                 <div class="hidden xl:block absolute w-72 h-[340px] left-96 -bottom-32"><img class="w-full h-full" src="dist/img/main-block/slider/03.png" alt="slide-decor"></div>
+                              </div>
+                              <div class="swiper-slide min-w-full h-full relative">
+                                 <img class="w-full h-full" src="dist/img/main-block/slider/01.png" alt="slider-img">
+                                 <div class="hidden xl:block absolute w-60 h-48 left-52 -top-24 rounded-lg overflow-hidden"><img class="w-full h-full" src="dist/img/main-block/slider/02.png" alt="slide-decor"></div>
+                                 <div class="hidden xl:block absolute w-72 h-[340px] left-96 -bottom-32"><img class="w-full h-full" src="dist/img/main-block/slider/03.png" alt="slide-decor"></div>
+                              </div>
+                              <div class="swiper-slide min-w-full h-full relative">
+                                 <img class="w-full h-full" src="dist/img/main-block/slider/01.png" alt="slider-img">
+                                 <div class="hidden xl:block absolute w-60 h-48 left-52 -top-24 rounded-lg overflow-hidden"><img class="w-full h-full" src="dist/img/main-block/slider/02.png" alt="slide-decor"></div>
+                                 <div class="hidden xl:block absolute w-72 h-[340px] left-96 -bottom-32"><img class="w-full h-full" src="dist/img/main-block/slider/03.png" alt="slide-decor"></div>
+                              </div>
+                              <div class="swiper-slide min-w-full h-full relative">
+                                 <img class="w-full h-full" src="dist/img/main-block/slider/01.png" alt="slider-img">
+                                 <div class="hidden xl:block absolute w-60 h-48 left-52 -top-24 rounded-lg overflow-hidden"><img class="w-full h-full" src="dist/img/main-block/slider/02.png" alt="slide-decor"></div>
+                                 <div class="hidden xl:block absolute w-72 h-[340px] left-96 -bottom-32"><img class="w-full h-full" src="dist/img/main-block/slider/03.png" alt="slide-decor"></div>
+                              </div>
+                              <div class="swiper-slide min-w-full h-full relative">
+                                 <img class="w-full h-full" src="dist/img/main-block/slider/01.png" alt="slider-img">
+                                 <div class="hidden xl:block absolute w-60 h-48 left-52 -top-24 rounded-lg overflow-hidden"><img class="w-full h-full" src="dist/img/main-block/slider/02.png" alt="slide-decor"></div>
+                                 <div class="hidden xl:block absolute w-72 h-[340px] left-96 -bottom-32"><img class="w-full h-full" src="dist/img/main-block/slider/03.png" alt="slide-decor"></div>
+                              </div>
+   
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+   
+            </div>
+         </section>
+      </header>
+   
+      <main class="w-full pt-24 xl:pt-36">
+   
+         <!-- SECTION PRESENTATION -->
+         <section class="max-w-[1730px] mx-auto px-8 pb-8 2xl:pb-20">
+   
+            <!-- TABLET-SLIDER-BLOCK -->
+            <div class="relative flex flex-col items-center xl:items-start xl:flex-row min-h-[541px] mb-8">
+               <!-- SLIDER -->
+               <div class="relative 2xl:absolute max-w-[692px] w-full h-full">
+   
+                  <div class="relative xl:absolute xl:-left-8 w-full pb-[78%]">
+                     <img class="absolute w-full h-full" src="dist/img/presentation/slider-tablet/tablet-photo.png" alt="tablet-photo">
+   
+                     <div class="absolute w-full h-full px-[9%] py-[8.7%]">
+                        <div class="swiper-container w-full h-full presentation-tablet-slider overflow-hidden">
+                           <div class="swiper-wrapper flex h-full">
+                              <div class="swiper-slide min-w-full h-full">
+                                 <img class="w-full h-full absolute" src="dist/img/presentation/slider-tablet/slides/01.png" alt="tablet-slide-img">
+                              </div>
+                              <div class="swiper-slide min-w-full h-full">
+                                 <img class="w-full h-full absolute" src="dist/img/presentation/slider-tablet/slides/01.png" alt="tablet-slide-img">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+   
+                  </div>
+   
+               </div>
+   
+               <!-- TEXT -->
+               <div class="xl:px-7 2xl:ml-[635px] 2xl:pl-24 pt-7 sm:pt-14 max-w-3xl">
+                  <h2 class="text-mainColor text-2xl sm:text-4xl font-light mb-4">Quick adding of negative words</h2>
+                  <p class="text-blueColor text-lg sm:text-2xl font-medium mb-5 md:mb-14">10 000 words into 1000 campaigns ? Not a problem!</p>
+                  <p class="text-lightMainColor text-lg font-light mb-5 md:mb-16 max-w-[620px]"><span class="font-medium">It will take up to 3 minutes.</span><br> 
+                     Mass add of negative keywords to unlimited campaigns. 
+                     Easy to use with no place for error. You are now predicting instead of guessing.                 
+                  </p>
+                  <a class="text-blueColor text-lg font-light border-b border-transparent hover:border-blueColor duration-50 fixClickBg" href="#" >Test Bulk Negative Keywords</a>
+               </div>
+            </div>
+   
+   
+            <!-- LAPTOOP-SLIDER-BLOCK -->
+            <div class="relative flex flex-col-reverse items-center pt-8 xl:pt-0 xl:justify-end w-full min-h-[512px] 2xl:-mt-11">
+   
+               <!-- TEXT -->
+               <div class="xl:mr-[800px] sm:pb-14 pt-7 sm:pt-14 max-w-3xl xl:self-end xl:text-right z-10">
+                  <h2 class="text-mainColor text-2xl sm:text-4xl font-light mb-4">Quick adding of keywords</h2>
+                  <p class="text-blueColor text-lg sm:text-2xl font-medium mb-5 md:mb-14">Unlimited Keyword List to Any Campaings</p>
+                  <p class="text-lightMainColor text-lg font-light mb-5 md:mb-16 max-w-[530px]">
+                     Add the list of words, choose the bidding and type of accordance, 
+                     choose any quantity of campaigns, AD Group.
+                     Set the bidding, upload the list of words – no chance for a mistake.<br>
+                     <span class="font-medium">This now takes only minutes, not hours.</span> 
+                  </p>
+                  <a class="text-blueColor text-lg font-light border-b border-transparent hover:border-blueColor duration-50 fixClickBg" href="#">Test Bulk Negative Keywords</a>
+               </div>
+   
+               <!-- SLIDER -->
+               <div class="relative xl:absolute right-0 max-w-[867px] w-full h-full">
+   
+                  <div class="relative xl:absolute xl:-right-32 w-full pb-[59%]">
+                     <img class="absolute w-full h-full" src="dist/img/presentation/slider-laptoop/laptoop-photo.png" alt="laptoop-photo">
+   
+                     <div class="absolute w-full h-full px-[16%] pt-[3%] pb-[8%]">
+                        <div dir="rtl" class="swiper-container w-full h-full presentation-laptoop-slider overflow-hidden">
+                           <div class="swiper-wrapper flex h-full">
+                              <div class="swiper-slide min-w-full h-full">
+                                 <img class="w-full h-full" src="dist/img/presentation/slider-laptoop/slides/01.png" alt="laptoop-slide-img">
+                              </div>
+                              <div class="swiper-slide min-w-full h-full">
+                                 <img class="w-full h-full" src="dist/img/presentation/slider-laptoop/slides/01.png" alt="laptoop-slide-img">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+   
+                  </div>
+   
+               </div>
+            </div>
+   
+         </section>
+         
+         <!-- SECTION VIDEO BLOCK -->   
+         <section class="max-w-[1730px] mx-auto pt-6 sm:pb-6 flex flex-col items-center section-video">
+            <div class="text-center px-4">
+               <h2 class="text-mainColor text-4xl font-light mb-5 sm:text-5xl">Still not impressed?</h2>
+               <p class="text-mainColor text-xl font-medium mb-7 sm:text-2xl">Click on the video and see how it can help your business</p>
+            </div>
+            <div class="relative max-w-[710px] w-full min-h-[620px]">
+               <div class="absolute w-full h-full"> 
+                  <div class="absolute w-full pb-[87%]">
+                     <img class="absolute w-full h-full" src="dist/img/video-img/monitor-photo.png" alt="monitor-photo">
+                     <div class="absolute w-full h-full pl-[4%] pr-[4%] pt-[4%] pb-[25%] video-block">
+                        <iframe src="https://www.youtube.com/embed/0NMIZ-PTt8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                     </div>
+                  </div>
+               </div>   
+            </div>
+         </section>
+   
+         <!-- TESTIMONIALS BLOCK -->   
+         <section class="max-w-[1730px] mx-auto px-4 sm:pt-6 pb-5 md:pb-12 flex flex-col items-center">
+            <h2 class="text-mainColor text-2xl sm:text-3xl md:text-4xl font-light mb-5 text-center">Industry leading professionals choose our tool</h2>
+            <p class="text-mainColor text-base xl:text-xl font-medium mb-7 text-center">A unique helper for business owners. Great for both professionals and beginners on Amazon</p>
+   
+            <!-- SLIDER -->
+            <div class="relative max-w-[970px] w-full">
+               <div class="testimonials-btn-next absolute w-[52px] h-[52px] rounded-[50%] fixClickBg border text-slate-400 border-slate-400 hover:border-slate-800 hover:text-slate-800 duration-50 top-[105%] right-1/4 xl:top-1/2 xl:-right-20 z-10 flex justify-center items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-rotate-90 w-5 h-5">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                  </svg>
+               </div>
+               <div class="testimonials-btn-prev absolute w-[52px] h-[52px] rounded-[50%] fixClickBg border text-slate-400 border-slate-400 hover:border-slate-800 hover:text-slate-800 duration-50 top-[105%] left-1/4  xl:top-1/2 xl:-left-20 z-10 flex justify-center items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="rotate-90 w-5 h-5">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                  </svg>
+               </div>
+               <div class="shadow-mainShadow w-full h-full">
+                  <div class="swiper-container w-full h-full overflow-hidden testimonials-slider">
+                     <div class="swiper-wrapper flex h-full">
+                        <div class="swiper-slide min-w-full min-h-full p-6 shadow-mainShadow">
+                           <div class="flex gap-5 pb-5 bg-line-testimonial flex-wrap sm:flex-nowrap">
+                              <div class="flex gap-5">
+                                 <div class="w-[100px] h-[100px] rounded-[50%] overflow-hidden shrink-0"><img class="w-full h-full" src="dist/img/testimoonials/slider-slide/01.png" alt="slider-photo"></div>
+                                 <div class="pt-2 sm:grow">
+                                    <div class="w-[88px] h-5 mb-1"><img class="w-full h-full" src="dist/img/testimoonials/slider-slide/stars.png" alt="slider-stars"></div>
+                                    <p class="text-lightMainColor text-2xl md:text-3xl font-light mb-2">Vika Shirhova</p>
+                                    <p class="text-blueColor text-sm md:text-base font-bold">PPC Specialis. CEO, Owner - Campaign Group. (2M$ Adv Spend)</p>
+                                 </div>
+                              </div>
+                              <!-- data-popup-youtube=" Here is a link to a YouTube video. Paste video key only. Do not use https://youtu.be/ " -->
+                              <button data-popup="#popup" data-popup-youtube="0NMIZ-PTt8k" type="button" class="fixClickBg flex gap-4 sm:gap-2 sm:flex-col justify-center items-center sm:max-w-[100px] md:max-w-[245px] w-full h-[50px] sm:h-[100px] border border-[#dedede] md:opacity-60 hover:opacity-100 duration-50">
+                                 <img class="w-8 h-8 sm:w-16 sm:h-16" src="dist/img/testimoonials/slider-slide/video-icon.png" alt="slider-icon">
+                                 <p class="text-[#3cbdb0] text-xs font-medium border-b border-transparent border-[#3cbdb0]">Watch Video</p>
+                              </button>
+                           </div>
+                           <div class="pt-7">
+                              <p class="text-lightMainColor text-2xl md:text-3xl font-light mb-4 md:mb-6">PPC Analyzing has never been easier...</p>
+                              <p class="text-sm md:text-base md:pl-10 mb-8 md:mb-16">The tool has limitless options to adjust it to my needs.<br>
+                                 As a professional seller, I used to spend a lot of time in the back office as Amazon doesn’t let me to work the way 
+                                 I wanted to. Full control over the campaigns, fast adding of keywords and negative words, it takes minutes now!
+                              </p>
+                              <p class="text-[#212121] text-sm md:text-base font-light text-right">.. with love, from <span class="font-medium">PPC Project</span> to <span class="font-medium">AMS Pilot.</span></p>
+                           </div>
+                        </div>
+                        <div class="swiper-slide min-w-full min-h-full p-6 shadow-mainShadow">
+                           <div class="flex gap-5 pb-5 bg-line-testimonial flex-wrap sm:flex-nowrap">
+                              <div class="flex gap-5">
+                                 <div class="w-[100px] h-[100px] rounded-[50%] overflow-hidden shrink-0"><img class="w-full h-full" src="dist/img/testimoonials/slider-slide/01.png" alt="slider-photo"></div>
+                                 <div class="pt-2 sm:grow">
+                                    <div class="w-[88px] h-5 mb-1"><img class="w-full h-full" src="dist/img/testimoonials/slider-slide/stars.png" alt="slider-stars"></div>
+                                    <p class="text-lightMainColor text-2xl md:text-3xl font-light mb-2">Vika Shirhova</p>
+                                    <p class="text-blueColor text-sm md:text-base font-bold">PPC Specialis. CEO, Owner - Campaign Group. (2M$ Adv Spend)</p>
+                                 </div>
+                              </div>
+                              <!-- data-popup-youtube=" Here is a link to a YouTube video. Paste video key only. Do not use https://youtu.be/ " -->
+                              <button data-popup="#popup" data-popup-youtube="0NMIZ-PTt8k" type="button" class="fixClickBg flex gap-4 sm:gap-2 sm:flex-col justify-center items-center sm:max-w-[100px] md:max-w-[245px] w-full h-[50px] sm:h-[100px] border border-[#dedede] md:opacity-60 hover:opacity-100 duration-50">
+                                 <img class="w-8 h-8 sm:w-16 sm:h-16" src="dist/img/testimoonials/slider-slide/video-icon.png" alt="slider-icon">
+                                 <p class="text-[#3cbdb0] text-xs font-medium border-b border-transparent border-[#3cbdb0]">Watch Video</p>
+                              </button>
+                           </div>
+                           <div class="pt-7">
+                              <p class="text-lightMainColor text-2xl md:text-3xl font-light mb-4 md:mb-6">PPC Analyzing has never been easier...</p>
+                              <p class="text-sm md:text-base md:pl-10 mb-8 md:mb-16">The tool has limitless options to adjust it to my needs.<br>
+                                 As a professional seller, I used to spend a lot of time in the back office as Amazon doesn’t let me to work the way 
+                                 I wanted to. Full control over the campaigns, fast adding of keywords and negative words, it takes minutes now!
+                              </p>
+                              <p class="text-[#212121] text-sm md:text-base font-light text-right">.. with love, from <span class="font-medium">PPC Project</span> to <span class="font-medium">AMS Pilot.</span></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section> 
+   
+         <!-- EXPLORE BLOCK --> 
+         <section class="relative pt-28">
+            <div class="w-full 2xl:pb-0 2xl:relative bg-explore-section">
+               <div class="max-w-[1730px] mx-auto w-full py-6 md:py-12 px-4 lg:pl-12">
+                  <!-- SLIDER -->
+                  <div class="relative w-full md:mb-12">
+                     <div class="swiper-container w-full explore-slider">
+                        <div class="swiper-wrapper flex">
+                           <div class="swiper-slide min-w-full flex justify-center gap-3 xl:gap-20 2xl:gap-56 explore-slider-slide">
+                              <div class="max-w-[540px] min-h-[555px] flex flex-col justify-end shrink-0 lg:shrink explore-slider-text">
+                                 <h2 class="max-w-[310px] text-mainColor text-2xl md:text-[42px] font-light mb-8 leading-tight">Explore tons of features for productive work.</h2>
+                                 <p class="max-w-[360px] text-blueColor text-2xl font-bold mb-8">You have now access to all your campaigns on one screen</p>
+                                 <p class="max-w-[430px] text-lightMainColor text-base font-light md:font-normal">No more switching between the tabs and 
+                                    waiting on Amazon to upload them. 
+                                    You can find the right campaign easy and fast even
+                                    if you have thousands of them.
+                                 </p>
+                              </div>
+                              <div class="max-w-[575px] w-full h-[555px] relative lg:shrink-0 block-image">
+                                 <div class="absolute w-full pb-[96%]">
+                                    <img class="absolute w-full h-full" src="dist/img/explore/slider/slide-img/1.png" alt="slide-image">
+                                 </div>
+                              </div>
+                           </div>
+          
+                           <div class="swiper-slide min-w-full flex justify-center gap-3 xl:gap-20 2xl:gap-56 explore-slider-slide">
+                              <div class="max-w-[540px] min-h-[555px] flex flex-col justify-end shrink-0 lg:shrink explore-slider-text">
+                                 <h2 class="max-w-[310px] text-mainColor text-2xl md:text-[42px] font-light mb-8 leading-tight">Porro inventore ratione totam?</h2>
+                                 <p class="max-w-[360px] text-blueColor text-2xl font-bold mb-8">You have now access to all your campaigns on one screen</p>
+                                 <p class="max-w-[430px] text-lightMainColor text-base font-light md:font-normal">Nesciunt corrupti dolore nulla rerum repellat perferendis quam eius placeat, et sint illum quas explicabo rem pariatur libero?
+                                 </p>
+                              </div>
+                              <div class="max-w-[575px] w-full h-[555px] relative lg:shrink-0 block-image">
+                                 <div class="absolute w-full pb-[96%]">
+                                    <img class="absolute w-full h-full" src="dist/img/main-block/slider/02.png" alt="slide-image">
+                                 </div>
+                              </div>
+                           </div>
+   
+                           <div class="swiper-slide min-w-full flex justify-center gap-3 xl:gap-20 2xl:gap-56 explore-slider-slide">
+                              <div class="max-w-[540px] min-h-[555px] flex flex-col justify-end shrink-0 lg:shrink explore-slider-text">
+                                 <h2 class="max-w-[310px] text-mainColor text-2xl md:text-[42px] font-light mb-8 leading-tight">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                 <p class="max-w-[360px] text-blueColor text-2xl font-bold mb-8">You have now access to all your campaigns on one screen</p>
+                                 <p class="max-w-[430px] text-lightMainColor text-base font-light md:font-normal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis minima molestiae laudantium alias esse ratione quia expedita saepe! Dicta nisi ipsum eos nihil odio eius consequatur beatae natus blanditiis ipsam?
+                                 </p>
+                              </div>
+                              <div class="max-w-[575px] w-full h-[555px] relative lg:shrink-0 block-image">
+                                 <div class="absolute w-full pb-[96%]">
+                                    <img class="absolute w-full h-full" src="dist/img/explore/slider/slide-img/1.png" alt="slide-image">
+                                 </div>
+                              </div>
+                           </div>
+          
+                           <div class="swiper-slide min-w-full flex justify-center gap-3 xl:gap-20 2xl:gap-56 explore-slider-slide">
+                              <div class="max-w-[540px] min-h-[555px] flex flex-col justify-end shrink-0 lg:shrink explore-slider-text">
+                                 <h2 class="max-w-[310px] text-mainColor text-2xl md:text-[42px] font-light mb-8 leading-tight">Explore tons of features for productive work.</h2>
+                                 <p class="max-w-[360px] text-blueColor text-2xl font-bold mb-8">You have now access to all your campaigns on one screen</p>
+                                 <p class="max-w-[430px] text-lightMainColor text-base font-light md:font-normal">No more switching between the tabs and 
+                                    waiting on Amazon to upload them. 
+                                    You can find the right campaign easy and fast even
+                                    if you have thousands of them.
+                                 </p>
+                              </div>
+                              <div class="max-w-[575px] w-full h-[555px] relative lg:shrink-0 block-image">
+                                 <div class="absolute w-full pb-[96%]">
+                                    <img class="absolute w-full h-full" src="dist/img/explore/slider/slide-img/02.png" alt="slide-image">
+                                 </div>
+                              </div>
+                           </div>
+   
+                           <div class="swiper-slide min-w-full flex justify-center gap-3 xl:gap-20 2xl:gap-56 explore-slider-slide">
+                              <div class="max-w-[540px] min-h-[555px] flex flex-col justify-end shrink-0 lg:shrink explore-slider-text">
+                                 <h2 class="max-w-[310px] text-mainColor text-2xl md:text-[42px] font-light mb-8 leading-tight">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                 <p class="max-w-[360px] text-blueColor text-2xl font-bold mb-8">You have now access to all your campaigns on one screen</p>
+                                 <p class="max-w-[430px] text-lightMainColor text-base font-light md:font-normal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis minima molestiae laudantium alias esse ratione quia expedita saepe! Dicta nisi ipsum eos nihil odio eius consequatur beatae natus blanditiis ipsam?
+                                 </p>
+                              </div>
+                              <div class="max-w-[575px] w-full h-[555px] relative lg:shrink-0 block-image">
+                                 <div class="absolute w-full pb-[96%]">
+                                    <img class="absolute w-full h-full" src="dist/img/explore/slider/slide-img/1.png" alt="slide-image">
+                                 </div>
+                              </div>
+                           </div>
+                                          
+                        </div>
+                     </div>
+                  </div>
+   
+                  <!-- THUMB -->
+                  <div class="max-w-[1017px] xl:max-w-[1085px] 2xl:max-w-[1230px] w-full mx-auto flex flex-col explore-thumb-container fixClickBg">
+                     <div class="w-full max-w-[466px] h-14 mb-8 md:mb-14 bg-white rounded-md shadow-mainShadow">
+                        <div class="swiper-container explore-slider-thumb w-full h-full">
+                           <div class="swiper-wrapper flex justify-center h-full">
+                              <div class="swiper-slide slide-thumb max-w-[94px] h-full flex justify-center items-center relative icon-list-ol-solid">
+                                 <span class="absolute w-[1px] h-8 bg-[#e2e2e2] right-0 top-3"></span>
+                              </div>
+                              <div class="swiper-slide slide-thumb max-w-[94px] h-full flex justify-center items-center relative icon-align-center-solid">
+                                 <span class="absolute w-[1px] h-8 bg-[#e2e2e2] right-0 top-3"></span>
+                              </div>
+                              <div class="swiper-slide slide-thumb max-w-[94px] h-full flex justify-center items-center relative icon-arrow-down-z-a-solid">
+                                 <span class="absolute w-[1px] h-8 bg-[#e2e2e2] right-0 top-3"></span>
+                              </div>
+                              <div class="swiper-slide slide-thumb max-w-[94px] h-full flex justify-center items-center relative icon-star-solid">
+                                 <span class="absolute w-[1px] h-8 bg-[#e2e2e2] right-0 top-3"></span>
+                              </div>
+                              <div class="swiper-slide slide-thumb max-w-[94px] h-full flex justify-center items-center relative icon-grip-solid">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <button class="fixClickBg max-w-fit inline-block mb-14 text-white text-lg font-normal bg-[#0075cf] px-14 py-2 rounded-3xl border hover:border hover:bg-white hover:text-black duration-50" type="button">Explore</button>
+                  </div>
+                  
+               </div>
+            </div>
+         </section> 
+         
+         <!-- ANALYZE BLOCK --> 
+         <section class="w-full pb-10">
+            <div class="w-full">
+               <div>
+                  <h2 class="text-mainColor text-2xl sm:text-3xl md:text-4xl font-light mb-5 text-center">Search Tearm Analyzer - Easiest way to Analyze</h2>
+                  <p class="text-mainColor text-base xl:text-xl font-medium mb-5 sm:mb-7 text-center">Search Tearm Analyzer – a multitask friend who is fighting for your time and business.</p>
+               </div>
+               <!-- SLIDER -->
+               <div class="max-h-[572px] h-full w-full px-4 lg:px-0 py-9 relative">
+                  <div class="hidden sm:w-14 sm:block absolute md:w-28 lg:w-56 h-full left-0 top-0 z-10"><img class="w-full h-full" src="dist/img/analyze/slider-image/slider-shadow.png" alt="slider-shadow"></div>
+                  <div class="hidden sm:w-14 sm:block absolute md:w-28 lg:w-56 h-full right-0 top-0 z-10"><img class="w-full h-full rotate-180" src="dist/img/analyze/slider-image/slider-shadow.png" alt="slider-shadow"></div>
+                  <div class="swiper analyze-slider min-h-full">
+                     <div class="swiper-wrapper">
+                       <div class="swiper-slide relative lg:px-0 sm:max-w-[450px] min-h-[250px] md:min-h-[300px] lg:max-w-[500px] lg:min-h-[380px] xl:max-w-[800px] xl:min-h-[500px] w-full h-full">
+                         <img class="absolute w-full h-full overflow-hidden" src="dist/img/analyze/slider-image/01.png" alt="slider-image">
+                       </div>
+                       <div class="swiper-slide relative lg:px-0 sm:max-w-[450px] min-h-[250px] md:min-h-[300px] lg:max-w-[500px] lg:min-h-[380px] xl:max-w-[800px] xl:min-h-[500px] w-full h-full">
+                         <img class="absolute w-full h-full overflow-hidden" src="dist/img/analyze/slider-image/02.png" alt="slider-image">
+                       </div>
+                       <div class="swiper-slide relative lg:px-0 sm:max-w-[450px] min-h-[250px] md:min-h-[300px] lg:max-w-[500px] lg:min-h-[380px] xl:max-w-[800px] xl:min-h-[500px] w-full h-full">
+                         <img class="absolute w-full h-full overflow-hidden" src="dist/img/analyze/slider-image/01.png" alt="slider-image">
+                       </div>
+                       <div class="swiper-slide relative lg:px-0 sm:max-w-[450px] min-h-[250px] md:min-h-[300px] lg:max-w-[500px] lg:min-h-[380px] xl:max-w-[800px] xl:min-h-[500px] w-full h-full">
+                         <img class="absolute w-full h-full overflow-hidden" src="dist/img/analyze/slider-image/02.png" alt="slider-image">
+                       </div>
+                     </div>
+                   </div>
+                   <div class="absolute w-full top-[101%] sm:top-1/2 pr-4">
+                      <div class="max-w-[580px] md:max-w-[650px] xl:max-w-[950px] w-full mx-auto gap-7 flex justify-center sm:justify-between">
+                         <div class="fixClickBg analyze-btn-prev w-[55px] h-[55px] bg-[#3dbeaf] rounded-[50%] border-[10px] border-btnShadow opacity-70 hover:opacity-100 duration-50 z-20 flex justify-center items-center">     
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="rotate-90 w-5 h-5 text-white">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                           </svg>
+                         </div>
+                        <div class="fixClickBg analyze-btn-next w-[55px] h-[55px] bg-[#3dbeaf] rounded-[50%] border-[10px] border-btnShadow opacity-70 hover:opacity-100 duration-50 z-20 flex justify-center items-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-rotate-90 w-5 h-5 text-white">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                           </svg>
+                        </div>
+                   </div>
+                   </div>
+               </div>
+               <p class="w-max-[940px] mt-20 sm:mt-0 px-4 text-lightMainColor text-base font-normal text-center">Limitless ability to add negative keywords immediately into a large number of Campaings. No need to spend tens of hours to add.<br>
+                  Smart Bulk File eliminates the possibility of errors
+               </p>
+            </div>
+         </section>
+   
+         <!-- REGISTER BLOCK --> 
+         <section class="w-full bg-register pt-14 pb-20">
+            <div class="max-w-[1730px] px-4 mx-auto flex flex-col items-center">
+               <h2 class="text-white text-2xl md:text-5xl font-light text-center mb-4">Register now and use it <span class="font-bold">FOR FREE FOREVER!</span></h2>
+               <p class="text-white text-base font-normal text-center mb-11">Full access granted. No credit card, no hidden conditions. Everything is simple and clear.</p>
+               <form class="flex flex-col items-center md:items-start" action="">
+                  <div class="flex min-w-full flex-col md:flex-row gap-6 md:gap-11 mb-5">
+                     <input class="px-4 py-3 w-full sm:w-[500px] text-base rounded-lg bg-[#fbfbfd] placeholder:text-base placeholder:text-[#6f6f6f] placeholder:italic" placeholder="Enter your email to start..." type="email">
+                     <button class="whitespace-nowrap px-9 py-2 text-xl font-normal fixClickBg text-mainColor bg-[#ffd814] border rounded-3xl hover:border-gray-600 hover:bg-yellow-200 duration-50" type="">Get Started</button>
+                  </div>
+                  <p class="text-[#a6c4d9] text-base font-light italic">Full Acces. .No Credit Card Required No hidden conditions.. Easy to Start</p>
+               </form>
+            </div>
+         </section> 
+   
+         <!-- INFO BLOCK --> 
+         <section class="w-full py-7 md:py-14">
+   
+            <div class="max-w-[1730px] px-4 mx-auto">
+               <div class="max-w-[1170px] mx-auto">
+   
+                  <div class="flex justify-between mb-6 flex-col md:flex-row">
+                     <div class="min-w-80 pr-4">
+                        <p class="text-mainColor text-base font-normal mb-4">Cliens FaQ’s</p>
+                        <h3 class="text-mainColor text-3xl md:text-4xl font-bold mb-8 md:mb-14">Frequently asked questions from <br>Amazon sellers</h3>
+                        <p class="text-lightMainColor text-lg font-normal mb-10">Do you have some other questions
+                           please get touch with our team leader</p>
+                        <button class="text-white text-lg font-normal bg-[#0075cf] fixClickBg px-14 py-2 rounded-3xl border hover:border hover:bg-white hover:text-black duration-50 mb-6" type="button">Ask Question</button>
+                     </div>
+   
+                     <div class="w-full">
+                        <div data-spollers data-one-spoller class="block-1 spoiler fixClickBg">
+                           <div class="spoiler__item mb-3">
+                              <button data-spoller tabindex="-1" type="button" class="spoiler__title text-blueColor text-base md:text-lg font-normal text-left w-full relative py-5 pl-7 pr-10 bg-[#f0f4f9]">Does AMS Pitol uses Amazon's MWS API's to access your sales data?</button>
+                              <div class="spoiler__text shadow-spoilerShadow text-sm text-lightMainColor font-normal p-6">
+                                 This is Amazon's standard way of exchanging information with third party applications. 
+                                 You can authorize sellerboard to access your amazon account, as well as revoke this authorization 
+                                 at any time. You don't have an amazon seller account yet? Register now and build your own 
+                                 ecommerce business.
+                              </div>
+                           </div>
+                           <div class="spoiler__item mb-3">
+                              <button data-spoller tabindex="-1" type="button" class="spoiler__title text-blueColor text-base md:text-lg font-normal text-left w-full relative py-5 pl-7 pr-10 bg-[#f0f4f9]">We accept credit cards. Charges occur monthly?</button>
+                              <div class="spoiler__text shadow-spoilerShadow text-sm text-lightMainColor font-normal p-6">
+                                 This is Amazon's standard way of exchanging information with third party applications. 
+                                 You can authorize sellerboard to access your amazon account, as well as revoke this authorization 
+                                 at any time. You don't have an amazon seller account yet? Register now and build your own 
+                                 ecommerce business.
+                              </div>
+                           </div>
+                           <div class="spoiler__item mb-3">
+                              <button data-spoller tabindex="-1" type="button" class="spoiler__title text-blueColor text-base md:text-lg font-normal text-left w-full relative py-5 pl-7 pr-10 bg-[#f0f4f9]">You will receive a VAT invoice in PDF format by email every month?</button>
+                              <div class="spoiler__text shadow-spoilerShadow text-sm text-lightMainColor font-normal p-6">
+                                 This is Amazon's standard way of exchanging information with third party applications. 
+                                 You can authorize sellerboard to access your amazon account, as well as revoke this authorization 
+                                 at any time. You don't have an amazon seller account yet? Register now and build your own 
+                                 ecommerce business.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+   
+                  <div class="mb-6">                    
+                     <div data-spollers data-one-spoller class="spoiler-box spoiler fixClickBg">
+                        <div class="spoiler__item spoiler-box__item">
+                           <button data-spoller tabindex="-1" type="button" class="spoiler__title btn-more text-lightMainColor text-lg font-light text-center w-full relative py-5 pl-7 pr-3 bg-[#fbfbfd] border border[rgba(132, 132, 132, 0.1)] hover:text-blueColor duration-300">
+                              <span class="flex justify-center items-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-1 icon-left">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                                  </svg>
+                                  Show all questions 
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-1 icon-right">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                                  </svg>
+                              </span>
+                           </button>
+                           <div class="spoiler__text spoiler-box__body">
+                              <div class="flex flex-col lg:flex-row gap-5 pt-5">
+                                 <div data-spollers data-one-spoller class="spoiler block-3 w-full lg:w-1/2 flex flex-col gap-5">
+                                    <div class="spoiler__item">
+                                       <button data-spoller tabindex="-1" type="button" class="spoiler__title text-blueColor text-lg font-normal text-left w-full relative py-5 pl-7 pr-10 bg-[#f0f4f9]">Are you accept credit card?</button>
+                                       <div class="spoiler__text shadow-spoilerShadow text-sm text-lightMainColor font-normal p-6">
+                                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                          Veritatis ducimus earum temporibus ipsa ex ab dignissimos voluptas, et voluptatum accusantium, sequi eaque nisi amet! Esse perspiciatis nostrum molestiae nisi voluptate.
+                                       </div>
+                                    </div>
+                                    <div class="spoiler__item">
+                                       <button data-spoller tabindex="-1" type="button" class="spoiler__title text-blueColor text-lg font-normal text-left w-full relative py-5 pl-7 pr-10 bg-[#f0f4f9]">Search Term Analyzing Page is working?</button>
+                                       <div class="spoiler__text shadow-spoilerShadow text-sm text-lightMainColor font-normal p-6">
+                                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                          Veritatis ducimus earum temporibus ipsa ex ab dignissimos voluptas, et voluptatum accusantium, sequi eaque nisi amet! Esse perspiciatis nostrum molestiae nisi voluptate.
+                                       </div>
+                                    </div>
+                                 </div>
+               
+                                 <div data-spollers data-one-spoller class="spoiler block-3 w-full lg:w-1/2 flex flex-col gap-5">
+                                    <div class="spoiler__item">
+                                       <button data-spoller tabindex="-1" type="button" class="spoiler__title text-blueColor text-lg font-normal text-left w-full relative py-5 pl-7 pr-10 bg-[#f0f4f9]">Search Term Analyzing Page is working?</button>
+                                       <div class="spoiler__text shadow-spoilerShadow text-sm text-lightMainColor font-normal p-6">
+                                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                          Veritatis ducimus earum temporibus ipsa ex ab dignissimos voluptas, et voluptatum accusantium, sequi eaque nisi amet! Esse perspiciatis nostrum molestiae nisi voluptate.
+                                       </div>
+                                    </div>
+                                    <div class="spoiler__item">
+                                       <button data-spoller tabindex="-1" type="button" class="spoiler__title text-blueColor text-lg font-normal text-left w-full relative py-5 pl-7 pr-10 bg-[#f0f4f9]">Search Term Analyzing Page is working?</button>
+                                       <div class="spoiler__text shadow-spoilerShadow text-sm text-lightMainColor font-normal p-6">
+                                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                          Veritatis ducimus earum temporibus ipsa ex ab dignissimos voluptas, et voluptatum accusantium, sequi eaque nisi amet! Esse perspiciatis nostrum molestiae nisi voluptate.
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+   
+      </main>
+   
+      <footer class="w-full bg-[#1a1f34]">
+         <div class="flex max-w-[1580px] justify-between mx-auto py-7 px-4 flex-wrap gap-y-8">
+   
+            <div class="w-1/2 lg:w-1/4 sm:pl-14 lg:pl-0 pr-4 footer-block fixClickBg">
+               <h4 class=" text-[#ebebeb] text-[22px] font-medium mb-4">About Company</h4>
+               <p class="text-[#959595] font-normal text-sm mb-5 max-w-[230px]">Our goal is to help our companies
+                  maintain achieve best class positions
+                  their respective industries & 
+                  our team works occur that 
+                  works have to be repudiated.</p>
+               <a class="text-[#ebebeb] text-2xl font-bold" href="#">AMS <span class="font-normal">Pilot</span>.</a>
+            </div>
+   
+            <div class="w-1/2 lg:w-1/4 sm:pl-14 lg:pl-0 pr-4 footer-block">
+               <h4 class=" text-[#ebebeb] text-[22px] font-medium mb-4">Useful Links</h4>
+               <ul class="flex flex-col gap-5 fixClickBg">
+                  <li><a class="text-[#959595] font-normal text-base hover:text-hoverLinkColor duration-50" href="#">Search Term Analyzer</a></li>
+                  <li><a class="text-[#959595] font-normal text-base hover:text-hoverLinkColor duration-50" href="#">Bulk Postitive Keywords</a></li>
+                  <li><a class="text-[#959595] font-normal text-base hover:text-hoverLinkColor duration-50" href="#">Bulk Negative Keywords</a></li>
+                  <li><a class="text-[#959595] font-normal text-base hover:text-hoverLinkColor duration-50" href="#">Media</a></li>
+               </ul>
+            </div>
+            
+            <div class="w-1/2 lg:w-1/4 sm:pl-14 lg:pl-0 pr-4 footer-block">
+               <h4 class=" text-[#ebebeb] text-[22px] font-medium mb-4">Contact US</h4>
+               <ul class="fixClickBg">
+                  <li>
+                     <p class="text-white font-bold text-base">Customer Care</p>
+                     <a class="text-[#959595] font-normal text-base hover:text-hoverLinkColor duration-50 inline-block mb-5" href="#">Amstool@gmail.com</a>
+                  </li>
+                  <li>
+                     <p class="text-white font-bold text-base">Technical Support</p>
+                     <a class="text-[#959595] font-normal text-base hover:text-hoverLinkColor duration-50 inline-block mb-5" href="#">amsprofit@gmail.com</a>
+                  </li>
+                  <li>
+                     <p class="text-white font-bold text-base">Address:</p>
+                     <a class="text-[#959595] font-normal text-base hover:text-hoverLinkColor duration-50 inline-block mb-5" href="#">London, Wallsterd 23 ap 27</a>
+                  </li>
+               </ul>
+            </div>
+   
+            <form class=" w-1/2 lg:w-1/4 flex flex-col gap-4 footer-block">
+               <textarea class="bg-[#f0f4f9] text-base resize-none p-3 h-36 rounded-lg placeholder:text-base placeholder:text-[#6f6f6f] placeholder:italic" name="message" cols="30" rows="10" placeholder="Type your question here..."></textarea>
+               <p class="text-[#f0f4f9] self-end text-xs font-light text-right italic">* Usually we are answering during 24 hours</p>
+               <button class="fixClickBg self-end whitespace-nowrap px-9 py-2 text-lg sm:text-xl font-normal text-mainColor bg-[#ffd814] border rounded-3xl hover:border-gray-600 hover:bg-yellow-200 duration-50" type="">Send Message</button>
+            </form>
+            
+         </div>
+         <div class="w-full py-7 bg-[#181c2a]">
+            <div class="flex max-w-[1580px] px-4 mx-auto justify-center sm:justify-between flex-wrap gap-7">
+               <p class="text-[#6d6d6d] text-base font-normal text-center">Copyright <span class="font-bold">Ams Pilot.</span> All Rights Reserved</p>
+               <p class="text-[#6d6d6d] text-base font-normal text-center">Privacy Policy  -  Terms & Conditions</p>
+            </div>
+         </div>
+      </footer>
+   
+      <!-- POPUP TESTIMONIALS VIDEO -->
+      <div id="popup" aria-hidden="true" class="popup">
+   		<div class="popup__wrapper">
+   			<div class="popup__content">
+   				<button data-close type="button" class="popup__close mb-3 p-1 fixClickBg">Close</button>
+   				<div class="popup__text relative w-full h-full pb-[65%]"></div>
+   			</div>
+   		</div>
+   	</div>
+   </div>
+
+</body>
+</html>
+
